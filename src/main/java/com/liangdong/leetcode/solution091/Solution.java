@@ -9,7 +9,8 @@ public class Solution {
             if (s.charAt(i - 1) != '0') {
                 c += b;
             }
-            if (i > 1 && s.charAt(i - 2) != '0' && (Integer.parseInt(s.substring(i - 2, i)) <= 26)) {
+            if (i > 1 && s.charAt(i - 2) != '0'
+                    && (Integer.parseInt(s.substring(i - 2, i)) <= 26)) {
                 c += a;
             }
             a = b;
